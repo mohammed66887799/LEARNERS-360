@@ -1,0 +1,7 @@
+{
+  "name": "AgroDetect",
+  "description": "A professional AI web application for identifying plant diseases from leaf images using Gemini Flash.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
