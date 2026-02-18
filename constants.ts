@@ -1,8 +1,8 @@
-
+// constants.ts
 
 export const MODEL_NAME = "gemini-1.5-flash";
 
-// Image validation settings
+// Image validation
 export const MAX_IMAGE_SIZE_MB = 10;
 
 export const ACCEPTED_IMAGE_TYPES = [
@@ -11,17 +11,17 @@ export const ACCEPTED_IMAGE_TYPES = [
   "image/webp"
 ];
 
-// Move the system prompt to service file (used when calling Gemini)
+// Gemini system prompt (needed for model call)
 export const SYSTEM_PROMPT = `
 You are a plant disease detection AI.
 
-Analyze plant leaf images and return:
-- Is it a plant? (true/false)
-- Plant name
-- Disease name (if any)
-- Confidence score (0-100)
-- Care tips
+Analyze the plant leaf image and return:
+- isPlant (true/false)
+- plantName
+- disease (if any)
+- confidence (0-100)
+- careTips
 
-If the plant is healthy, provide care tips only.
-If the image is not a plant, return isPlant: false.
+If not a plant → set isPlant to false.
+If plant is healthy → provide care tips.
 `;
