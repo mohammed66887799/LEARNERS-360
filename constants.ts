@@ -1,4 +1,4 @@
-export const MODEL_NAME = 'gemini-flash-latest';
+export const MODEL_NAME = 'gemini-1.5-flash';
 
 export const SYSTEM_INSTRUCTION = `
 You are an expert plant pathologist and botanist. 
